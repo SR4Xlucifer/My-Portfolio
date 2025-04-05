@@ -31,7 +31,7 @@ With experience in Python, SQL, Big Data technologies, and a background in syste
 You can download my resume [here](./Soham%20Resume.pdf).
 
 ## 🌐 Live Demo
-👉 [Click to view my portfolio](https://yourusername.github.io/soham-portfolio)
+👉 [Click to view my portfolio](https://SR4Xlucifer.github.io/My-Portfolio)
 
 ## 📬 Contact
 - **Email:** sr4sohamwadale@gmail.com  
