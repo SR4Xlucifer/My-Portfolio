@@ -29,7 +29,7 @@
     header {
       background: var(--primary);
       color: white;
-      padding: 3rem 2rem 1rem;
+      padding: 4rem 2rem;
       text-align: center;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
@@ -44,38 +44,25 @@
       color: #cbd5e1;
     }
 
-    nav {
-      background: var(--light);
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      padding: 1rem;
-      flex-wrap: wrap;
-    }
-
-    nav button {
-      background: var(--primary);
+    header a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: var(--accent);
       color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      cursor: pointer;
+      border-radius: 8px;
+      text-decoration: none;
       transition: background 0.3s;
     }
 
-    nav button:hover {
-      background: var(--accent);
+    header a:hover {
+      background: #2563eb;
     }
 
-    .page {
-      display: none;
+    section {
       padding: 3rem 2rem;
       max-width: 800px;
       margin: auto;
-    }
-
-    .active {
-      display: block;
     }
 
     h2 {
@@ -125,21 +112,12 @@
     <a href="Soham%20Resume.pdf" target="_blank">Download Resume</a>
   </header>
 
-  <nav>
-    <button onclick="showPage('about')">About</button>
-    <button onclick="showPage('skills')">Skills</button>
-    <button onclick="showPage('experience')">Experience</button>
-    <button onclick="showPage('education')">Education</button>
-    <button onclick="showPage('certifications')">Certifications</button>
-    <button onclick="showPage('contact')">Contact</button>
-  </nav>
-
-  <section id="about" class="page active">
+  <section id="about">
     <h2>About Me</h2>
     <p>I am a motivated and detail-oriented AI & ML Engineering student with a passion for data analytics, data engineering, and machine learning. I specialize in data preprocessing, visualization, and building models to solve real-world problems.</p>
   </section>
 
-  <section id="skills" class="page">
+  <section id="skills">
     <h2>Skills</h2>
     <ul>
       <li>Python, SQL</li>
@@ -150,7 +128,7 @@
     </ul>
   </section>
 
-  <section id="experience" class="page">
+  <section id="experience">
     <h2>Work Experience</h2>
     <h3>Assistant Supervisor – CEAT Tyres</h3>
     <ul>
@@ -160,19 +138,19 @@
     </ul>
   </section>
 
-  <section id="education" class="page">
+  <section id="education">
     <h2>Education</h2>
     <p><strong>B.Tech in CSE (AI & ML)</strong> – Guru Gobind Singh Polytechnic (2021-24)</p>
     <p><strong>Diploma in Mechatronics</strong> – Sanjivani University (2024-28)</p>
     <p><strong>SSC</strong> – Eureka Infosys School (87.8%)</p>
   </section>
 
-  <section id="certifications" class="page">
+  <section id="certifications">
     <h2>Certifications</h2>
     <p>EF-SET English Test – Score: 69</p>
   </section>
 
-  <section id="contact" class="page">
+  <section id="contact">
     <h2>Contact Me</h2>
     <p>Email: <a href="mailto:sr4sohamwadale@gmail.com">sr4sohamwadale@gmail.com</a></p>
     <p>Phone: +91 8766699532</p>
@@ -182,14 +160,5 @@
   <footer>
     <p>&copy; 2025 Soham Wadale</p>
   </footer>
-
-  <script>
-    function showPage(id) {
-      document.querySelectorAll('.page').forEach(page => {
-        page.classList.remove('active');
-      });
-      document.getElementById(id).classList.add('active');
-    }
-  </script>
 </body>
 </html>
