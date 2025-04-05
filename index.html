@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soham Wadale | AI & ML Engineer</title>
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #3b82f6;
+      --bg: #f1f5f9;
+      --text: #1e293b;
+      --light: #e2e8f0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 3rem 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+
+    nav {
+      background: var(--light);
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    nav button:hover {
+      background: var(--accent);
+    }
+
+    .page {
+      display: none;
+      padding: 3rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .active {
+      display: block;
+    }
+
+    h2 {
+      color: var(--primary);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid var(--accent);
+      padding-left: 0.5rem;
+    }
+
+    ul {
+      list-style: inside square;
+      padding-left: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--light);
+      color: var(--primary);
+      margin-top: 2rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm Soham Wadale</h1>
+    <p>AI & ML Engineering Student | Data Analyst | Data Engineer</p>
+    <a href="Soham%20Resume.pdf" target="_blank">Download Resume</a>
+  </header>
+
+  <nav>
+    <button onclick="showPage('about')">About</button>
+    <button onclick="showPage('skills')">Skills</button>
+    <button onclick="showPage('experience')">Experience</button>
+    <button onclick="showPage('education')">Education</button>
+    <button onclick="showPage('certifications')">Certifications</button>
+    <button onclick="showPage('contact')">Contact</button>
+  </nav>
+
+  <section id="about" class="page active">
+    <h2>About Me</h2>
+    <p>I am a motivated and detail-oriented AI & ML Engineering student with a passion for data analytics, data engineering, and machine learning. I specialize in data preprocessing, visualization, and building models to solve real-world problems.</p>
+  </section>
+
+  <section id="skills" class="page">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python, SQL</li>
+      <li>Pandas, Matplotlib, Seaborn</li>
+      <li>Scikit-learn, TensorFlow</li>
+      <li>Big Data: Spark, Hadoop</li>
+      <li>ETL Pipelines, Data Processing</li>
+    </ul>
+  </section>
+
+  <section id="experience" class="page">
+    <h2>Work Experience</h2>
+    <h3>Assistant Supervisor – CEAT Tyres</h3>
+    <ul>
+      <li>Designed and implemented system architectures improving efficiency by 30%</li>
+      <li>Led a team of 5 to develop scalable solutions</li>
+      <li>Reduced raw material wastage through process optimization</li>
+    </ul>
+  </section>
+
+  <section id="education" class="page">
+    <h2>Education</h2>
+    <p><strong>B.Tech in CSE (AI & ML)</strong> – Guru Gobind Singh Polytechnic (2021-24)</p>
+    <p><strong>Diploma in Mechatronics</strong> – Sanjivani University (2024-28)</p>
+    <p><strong>SSC</strong> – Eureka Infosys School (87.8%)</p>
+  </section>
+
+  <section id="certifications" class="page">
+    <h2>Certifications</h2>
+    <p>EF-SET English Test – Score: 69</p>
+  </section>
+
+  <section id="contact" class="page">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:sr4sohamwadale@gmail.com">sr4sohamwadale@gmail.com</a></p>
+    <p>Phone: +91 8766699532</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/soham-wadale-662532337/" target="_blank">soham-wadale</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Soham Wadale</p>
+  </footer>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(page => {
+        page.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
