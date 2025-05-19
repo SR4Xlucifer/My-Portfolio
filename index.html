@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soham Wadale | AI & ML Engineer</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #3b82f6;
+      --bg: #f1f5f9;
+      --text: #1e293b;
+      --light: #e2e8f0;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background: var(--bg); color: var(--text); line-height: 1.6; }
+    header {
+      background: var(--primary); color: white; padding: 3rem 2rem 1rem;
+      text-align: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; animation: fadeInDown 1s ease-out; }
+    header p { font-size: 1.2rem; color: #cbd5e1; animation: fadeInUp 1s ease-out 0.3s; }
+    nav {
+      background: var(--light); display: flex; justify-content: center; gap: 1rem;
+      padding: 1rem; flex-wrap: wrap;
+    }
+    nav button {
+      background: var(--primary); color: white; border: none; padding: 0.5rem 1rem;
+      border-radius: 6px; cursor: pointer; transition: background 0.3s;
+    }
+    nav button:hover { background: var(--accent); }
+    .page {
+      display: none; padding: 3rem 2rem; max-width: 800px; margin: auto;
+      animation: fadeIn 0.5s ease-in;
+    }
+    .active { display: block; }
+    h2 {
+      color: var(--primary); font-size: 2rem; margin-bottom: 1rem;
+      border-left: 5px solid var(--accent); padding-left: 0.5rem;
+    }
+    ul { list-style: inside square; padding-left: 1rem; }
+    footer {
+      text-align: center; padding: 2rem; background: var(--light);
+      color: var(--primary); margin-top: 2rem;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      header p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm Soham Wadale</h1>
+    <p>AI & ML Engineering Student | Data Analyst | Data Engineer</p>
+    <a href="Soham%20Resume.pdf" target="_blank">Download Resume</a>
+  </header>
+  <nav>
+    <button onclick="showPage('about')">About</button>
+    <button onclick="showPage('skills')">Skills</button>
+    <button onclick="showPage('experience')">Experience</button>
+    <button onclick="showPage('education')">Education</button>
+    <button onclick="showPage('projects')">Projects</button>
+    <button onclick="showPage('certifications')">Certifications</button>
+    <button onclick="showPage('contact')">Contact</button>
+  </nav>
+  <section id="about" class="page active" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>Motivated and detail-oriented AI & ML Engineering student with a strong foundation in data analytics, data engineering, and machine learning. Proficient in JAVA and SQL, with hands-on experience in data preprocessing, visualization, and model building. Passionate about leveraging data-driven insights to solve real-world problems and optimize business decisions.</p>
+  </section>
+  <section id="skills" class="page" data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul>
+      <li>JAVA, Python</li>
+      <li>Oracle SQL</li>
+      <li>Power BI</li>
+      <li>AI Tools: ChatGPT</li>
+    </ul>
+  </section>
+  <section id="experience" class="page" data-aos="fade-up">
+    <h2>Experience</h2>
+    <h3>Assistant Supervisor – CEAT Tyres Pvt. Ltd. (Jan 2024 – May 2024)</h3>
+    <ul>
+      <li>Worked in the manufacturing department at CEAT Tyres, Nashik</li>
+      <li>Observed production line processes and identified faults</li>
+      <li>Suggested and implemented efficient solutions</li>
+    </ul>
+  </section>
+  <section id="education" class="page" data-aos="fade-up">
+    <h2>Education</h2>
+    <p><strong>B.Tech in CSE (AI & ML)</strong> – Sanjivani University, Kopargaon (2024-27) – 7.09 CGPA</p>
+    <p><strong>Diploma in Mechatronics Engineering</strong> – Guru Gobind Singh Polytechnic, Nashik (2021-24) – 78.67%</p>
+    <p><strong>SSC 10th</strong> – Eureka Infosys School (2020-21) – 87.8%</p>
+  </section>
+  <section id="projects" class="page" data-aos="fade-up">
+    <h2>Projects</h2>
+    <h3>1. Foreign Material Detector</h3>
+    <ul>
+      <li>Capacitive plates used to detect non-metal foreign materials in rubber compounds</li>
+      <li>Built using Arduino-based IoT model</li>
+    </ul>
+    <h3>2. Smart Locker System</h3>
+    <ul>
+      <li>Designed an IoT-based locker system with RFID, IR sensors, ESP32, and real-time database</li>
+      <li>Improved security and flexibility for public locker systems</li>
+    </ul>
+  </section>
+  <section id="certifications" class="page" data-aos="fade-up">
+    <h2>Certifications</h2>
+    <ul>
+      <li>EF-SET English Test – Score: 69</li>
+      <li>NPTEL Examination – Score: 60%</li>
+    </ul>
+  </section>
+  <section id="contact" class="page" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:sr4sohamwadale@gmail.com">sr4sohamwadale@gmail.com</a></p>
+    <p>Phone: +91 8766699532</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/soham-wadale-662532337/" target="_blank">soham-wadale</a></p>
+    <p>GitHub: <a href="https://github.com/SR4Xlucifer" target="_blank">SR4Xlucifer</a></p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Soham Wadale</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(page => {
+        page.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
